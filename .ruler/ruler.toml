@@ -1,0 +1,4 @@
+# Ruler Configuration File
+# See https://ai.intellectronica.net/ruler for documentation.
+
+default_agents = ["copilot", "gemini-cli", "cursor", "codex"]

@@ -8,7 +8,7 @@ namespace DiscordBot.Modules;
 public class GeneralModule : InteractionModuleBase<SocketInteractionContext> {
   [SlashCommand("ping", "Pings the bot and returns its latency.")]
   public async Task PingAsync() =>
-    await RespondAsync("mewo emow!");
+    await RespondAsync("Pong!");
 
   [SlashCommand("echo", "Echoes the provided message.")]
   public async Task EchoAsync([Summary("message", "The message to echo back.")] string message) =>

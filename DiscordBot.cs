@@ -8,19 +8,19 @@ using Microsoft.Extensions.Logging;
 
 namespace DiscordBot;
 
-public class Program {
+public class DiscordBot {
   private DiscordSocketClient? m_client;
   private InteractionService? m_interactions;
-  private ILogger<Program>? m_logger;
+  private ILogger<DiscordBot>? m_logger;
   private IServiceProvider? m_services;
 
-  public static Task Main() => new Program().MainAsync();
+  public static Task Main() => new DiscordBot().MainAsync();
 
   private async Task MainAsync() {
     Env.Load();
 
     ILoggerFactory loggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(); });
-    m_logger = loggerFactory.CreateLogger<Program>();
+    m_logger = loggerFactory.CreateLogger<DiscordBot>();
 
     m_client = new DiscordSocketClient(new DiscordSocketConfig {
       GatewayIntents =

@@ -1,0 +1,61 @@
+
+# GitIgnore for DiscordBot project
+
+# Rider
+.idea/
+*.DotSettings
+*.DotSettings.user
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Packages
+*.nupkg
+*.snupkg
+*.dll
+*.pdb
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Other
+*~
+*.bak
+*.swp
+*.swo
+*.tmp
+*.temp
+*.backup
+*.orig
+*.rej
+*.diff
+*.patch
+*.pid
+*.seed
+*.env
+.cache
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.DS_Store
+ehthumbs.db
+Icon?
+*.user
+*.userosscache
+*.sln.docstates
+DiscordBot.sln.DotSettings.user

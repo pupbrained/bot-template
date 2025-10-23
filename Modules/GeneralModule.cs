@@ -18,4 +18,9 @@ public class GeneralModule : InteractionModuleBase<SocketInteractionContext> {
   [SlashCommand("adminonly", "An admin-only command.")]
   public async Task AdminsOnlyCommandAsync() =>
     await RespondAsync("This is an admin-only command.");
+
+  [CommandContextType(InteractionContextType.BotDm)]
+  [SlashCommand("dm", "A command that can only be used in DMs with the bot.")]
+  public async Task DmOnlyCommandAsync() =>
+    await RespondAsync("This command was used in a DM with the bot.");
 }
